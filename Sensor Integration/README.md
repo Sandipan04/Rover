@@ -30,7 +30,7 @@ Ensure you have the following installed:
 ### A4988 Driver-Based Stepper Motor
 
 ```python
-from stepper_module import Stepper  # Assuming the file is named stepper_module.py
+from StepperLib import Stepper
 
 stepper = Stepper(board, dir_pin=8, step_pin=7, micro_step_pins=(2,3,4), total_steps=200)
 ```
@@ -38,7 +38,7 @@ stepper = Stepper(board, dir_pin=8, step_pin=7, micro_step_pins=(2,3,4), total_s
 ### ULN2003 Driver-Based Stepper Motor
 
 ```python
-from stepper_module import Stepper_ULN2003
+from StepperLib import Stepper_ULN2003
 
 stepper = Stepper_ULN2003(board, pins=(8,9,10,11))
 ```
